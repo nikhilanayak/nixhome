@@ -10,6 +10,7 @@
     ../common/suyan.nix
     ../common/proteet.nix
     ../common/zixuan.nix
+    ../common/kaiweitu.nix
     ./hardware-configuration.nix
   ];
   networking.hostName = "adsl-ssd";
@@ -26,7 +27,10 @@
     pkgs.htop
     pkgs.fio
     pkgs.linuxPackages_latest.perf
+    pkgs.glibc
   ];
+
+  environment.enableDebugInfo = true;
 
   programs.mosh.enable = true;
 
