@@ -17,6 +17,7 @@
   time.timeZone = "America/Chicago";
 
   boot.kernelParams = [ "nvme.poll_queues=32" "iommu=off" ];
+  boot.swraid.enable = true;
 
   programs.zsh.enable = true;
 
