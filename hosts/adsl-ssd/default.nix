@@ -78,6 +78,8 @@
     8000
   ];
 
+  virtualisation.docker.enable = true;
+
   security.pam.loginLimits = [
     {
       domain = "proteet";
