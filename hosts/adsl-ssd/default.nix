@@ -16,7 +16,7 @@
   networking.hostName = "adsl-ssd";
   time.timeZone = "America/Chicago";
 
-  boot.kernelParams = [ "nvme.poll_queues=32" "iommu=off" ];
+  boot.kernelParams = [ "nvme.poll_queues=32" "iommu=off" "nvme_core.multipath=N" ];
   boot.swraid.enable = true;
 
   programs.zsh.enable = true;
